@@ -1,3 +1,4 @@
 baseURL = 'https://moriw.github.io/'
 languageCode = 'zh-cn'
 title = 'Mori, code, photo, think'
+theme = 'PaperMod'
