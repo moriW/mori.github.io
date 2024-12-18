@@ -1,7 +1,7 @@
 name: blog deploy pipline
 on:
   push:
-  branches: [ "main" ]
+    branches: [ "main" ]
  
 env:
   REGISTRY: ghcr.io
@@ -32,6 +32,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         if: ${{github.ref == 'refs/heads/main'}}
         with:
-            github_token: ${{secrets.GITHUB_TOKEN}}
-            publish_dir: ./public
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          publish_dir: ./public
 
